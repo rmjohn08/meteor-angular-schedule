@@ -1,0 +1,16 @@
+<h4>Leagues</h4>
+
+<div class="container">
+ <div class="jumbotron">
+	<div class="row" ng-repeat="league in leagueCtrl.leagues">
+		<div class="col-sm-4">
+			{{league.name || 'league'}}
+		</div>
+		<div class="col-sm-2">
+			<a ui-sref="leagueDetail({leagueId:league._id})">manage</a>&nbsp;
+			<a ui-sref="leagueResults({leagueId:league._id})">results</a>
+		
+		</div>
+	</div>
+	</div>
+</div>
